@@ -1,0 +1,39 @@
+.wpapper-list-icon {
+  flex-direction: column;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $white-color-text;
+}
+
+.social-list {
+  @extend %list;
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer-social__link {
+  @extend %link;
+  @include center-flex;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  fill: $white-color-text;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-list__link--indent-color {
+  background-color: #44454e;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

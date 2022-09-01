@@ -1,0 +1,130 @@
+.data-form {
+  padding: 40px;
+}
+
+.data-form__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.data-form__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $secondary-color;
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.data-form__input {
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .data-form__label:focus-within & {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
+
+.data-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .data-form__label:focus-within & {
+    fill: $accent-color;
+  }
+}
+
+.data-form__input--big-height {
+  resize: none;
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 12px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.data-form__checkbox {
+  @include center-flex();
+  margin-top: 20px;
+}
+
+.data-form__input--hidden {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.data-form__checkbox-icon {
+  border: 2px solid $main-color;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.data-form__input--hidden:checked + .data-form__checkbox-icon {
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+}
+
+.data-form__checkbox-text {
+  margin-left: 7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+
+  color: $secondary-color;
+}
+
+.data-form__checkbox-link {
+  color: $accent-color;
+}
+
+.data-form__btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 52px;
+  border: none;
+
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  color: $white-color-text;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
