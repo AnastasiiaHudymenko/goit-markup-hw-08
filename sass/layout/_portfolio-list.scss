@@ -4,7 +4,13 @@
 }
 
 .portfolio-list__item {
-  flex-basis: calc((100% - 60px) / 3);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .product-card {
@@ -42,7 +48,7 @@
 }
 
 .product-card__desk {
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   color: $white-color-text;
@@ -51,6 +57,12 @@
 .product-card__wrapper-content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+
+  &--padding-size {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 20px 24px 56px 24px;
+    }
+  }
 }
 
 .product-card__title {

@@ -19,22 +19,31 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <div class="header__flex-container">
-          <nav class="header__nav">
-            <a class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
-            <ul class="menu-list">
-              <li class="menu-list__item">
-                <a class="menu-list__link current-link" href="./index.html">Студія</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- contacts-blog -->
+        <nav class="header__nav">
+          <a class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
+          <button
+            class="header__btn menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="перемикачь мобільного меню">
+              <use class="header__icon-menu" href="./images/sprite-nav-2.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link current-link" href="./index.html">Студія</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">Контакти</a>
+            </li>
+          </ul>
+
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="malito:info@devstudio.com"
@@ -53,7 +62,7 @@
               >
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -97,7 +106,7 @@
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features-__itle">Планування</h3>
+              <h3 class="features__title">Планування</h3>
               <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -163,12 +172,25 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/men-1.jpg"
-                alt="чолвік в окулярах і сорочці"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/men-1.jpg 1x, ./images/team-1-540px-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/team-1-354px.jpg 1x, ./images/tablet/team-1-708px.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/image-mobiles/team-1.jpg    1x,
+                    ./images/image-mobiles/team-1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/image-mobiles/team-1.jpg" alt="" width="450" height="460" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__posishion" lang="en">Product Designer</p>
@@ -205,7 +227,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/women-2.jpg" alt="дівчина в окулярах" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/women-2.jpg 1x, ./images/team-2-540px-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/team-2-354px.jpg 1x, ./images/tablet/team-2-708px.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/image-mobiles/team-2.jpg    1x,
+                    ./images/image-mobiles/team-2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/image-mobiles/team-2.jpg" alt="" width="450" height="460" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__posishion" lang="en">Frontend Developer</p>
@@ -242,12 +282,24 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/men-3.jpg"
-                alt="чоловік в синій сорочці"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/men-3.jpg 1x, ./images/team-3-540px-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/team-3-354px.jpg 1x, ./images/tablet/team-3-708px.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/image-mobiles/team-3.jpg    1x,
+                    ./images/image-mobiles/team-3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/image-mobiles/team-3.jpg" alt="" width="450" height="460" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__posishion" lang="en">Marketing</p>
@@ -284,12 +336,24 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/men-4.jpg"
-                alt="чоловік в окулярах і чорній футболці"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/men-4.jpg 1x, ./images/team-4-540px-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/team-4-354px.jpg 1x, ./images/tablet/team-4-708px.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/image-mobiles/team-4.jpg    1x,
+                    ./images/image-mobiles/team-4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/image-mobiles/team-4.jpg" alt="" width="450" height="460" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__posishion" lang="en">UI Designer</p>
@@ -453,6 +517,41 @@
         </form>
       </div>
     </footer>
+    <!-- MOBILE-MENU -->
+
+    <div class="mobil-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__btn js-close-menu" type="button">
+        <svg class="mobile-menu__icon-cross" width="40" height="40px">
+          <use href="./images/sprite-nav-2.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link mobile-nav__link--current" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contact">
+        <li class="mobile-contact__item">
+          <a class="mobile-contact__link mobile-contact__link--indent" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contact__item">
+          <a class="mobile-contact__link" href="malito:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobail-social__item"><a class="mobile-social__link" href="">Instagram</a></li>
+        <li class="mobail-social__item"><a class="mobile-social__link" href="">Twitter</a></li>
+        <li class="mobail-social__item"><a class="mobile-social__link" href="">Facebook</a></li>
+        <li class="mobail-social__item"><a class="mobile-social__link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
 
     <!-- BACKDROP-MODAL -->
     <div class="backdrop is-hidden" data-modal>
@@ -511,6 +610,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobil-menu.js"></script>
   </body>
 </html>
