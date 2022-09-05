@@ -5,7 +5,8 @@
   justify-content: center;
   margin-bottom: 40px;
   gap: 8px;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 326px;
     justify-content: flex-start;
   }

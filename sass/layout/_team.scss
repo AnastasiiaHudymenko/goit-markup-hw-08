@@ -5,12 +5,11 @@
 .team__list {
   @extend %list;
   @extend %flexGap;
+  text-align: center;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
-
-  text-align: center;
 }
 
 .team__item {
