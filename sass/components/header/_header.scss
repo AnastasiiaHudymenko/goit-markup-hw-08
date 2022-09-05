@@ -5,10 +5,10 @@
 
 .header__nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 1200px) {
-    justify-content: start;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: space-between;
   }
 }
 .logo--black {

@@ -100,13 +100,14 @@
 .mobile-social {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   margin-top: 64px;
 }
 
-.mobail-social__item:not(:last-child) {
-  border-right: 1px solid #ccc;
-  padding-right: 10px;
+.mobail-social__item {
+  // border-right: 1px solid #ccc;
+  // padding-right: 10px;
+  position: relative;
 }
 
 .mobile-social__link {
@@ -115,4 +116,16 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
+}
+
+.mobile-social__link--after:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 22px;
+  height: 1px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
