@@ -73,7 +73,10 @@
 // mobail-contact
 
 .mobile-contact {
-  margin-top: 302px;
+  margin-top: 105px;
+  @media screen and (min-width: 480px) {
+    margin-top: 302px;
+  }
 }
 
 .mobile-contact__item:not(:last-child) {
