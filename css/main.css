@@ -475,7 +475,6 @@ body {
 }
 
 .data-form__label {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,18 +482,27 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
 }
 .data-form__label + .data-form__label {
   margin-top: 10px;
 }
 
+.data-form__field-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.data-form__field-wrapper {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+}
+
 .data-form__input {
   height: 40px;
-  margin-top: 4px;
+  width: 100%;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -502,7 +510,7 @@ body {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.data-form__label:focus-within .data-form__input {
+.data-form__input:focus {
   border: 1px solid #2196f3;
   outline: none;
 }
@@ -511,16 +519,19 @@ body {
   position: absolute;
   top: 50%;
   left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.data-form__label:focus-within .data-form__icon {
+.data-form__input:focus + .data-form__icon {
   fill: #2196f3;
 }
 
 .data-form__input--big-height {
   resize: none;
   height: 120px;
+  margin-top: 4px;
   padding-left: 16px;
   padding-top: 12px;
 }
@@ -581,10 +592,13 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .data-form__input--hidden:checked + .data-form__checkbox-icon {
   background-color: #2196f3;
   border: 2px solid #2196f3;
+}
+.data-form__input--hidden:focus + .data-form__checkbox-icon {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 250, 0.5);
+          box-shadow: 0 0 0 2px rgba(0, 0, 250, 0.5);
 }
 
 .data-form__checkbox-text {
@@ -826,10 +840,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer__wrapper-address {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     text-align: left;
   }
 }
@@ -952,9 +962,12 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+.sign-up-form__label {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
   .sign-up-form__label {
-    display: block;
+    margin-right: 12px;
   }
 }
 
@@ -976,7 +989,6 @@ body {
 @media screen and (min-width: 1200px) {
   .sign-up-form__input {
     width: 358px;
-    margin-right: 12px;
   }
 }
 

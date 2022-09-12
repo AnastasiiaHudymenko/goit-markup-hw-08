@@ -22,8 +22,9 @@
 }
 
 .sign-up-form__label {
-  @media screen and (max-width: 1199px) {
-    display: block;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 
@@ -42,7 +43,7 @@
   background-color: transparent;
   @media screen and (min-width: 1200px) {
     width: 358px;
-    margin-right: 12px;
+    
   }
 }
 

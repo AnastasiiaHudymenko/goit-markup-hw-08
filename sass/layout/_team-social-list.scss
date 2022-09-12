@@ -6,7 +6,7 @@
 
 .social-list__link {
   @extend %link;
-  @include center-flex;
+  @include center-flex();
   min-width: 44px;
   min-height: 44px;
   border-radius: 50%;
