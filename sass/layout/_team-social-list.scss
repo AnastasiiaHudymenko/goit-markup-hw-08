@@ -16,7 +16,7 @@
 
   &:hover,
   &:focus {
-    fill: $white-color-text;
-    background-color: $accent-color;
+    fill: var(--white-color-text);
+    background-color: var(--accent-color);
   }
 }

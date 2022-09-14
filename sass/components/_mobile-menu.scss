@@ -23,7 +23,7 @@
 
 .mobile-menu__btn:hover .mobile-menu__icon-cross,
 .mobile-menu__btn:focus .mobile-menu__icon-cross {
-  fill: $accent-color;
+  fill: var(--accent-color);
 }
 
 .mobil-menu {
@@ -35,7 +35,7 @@
   height: 100vh;
   z-index: 999;
   padding: 10px 15px 48px 40px;
-  background-color: $main-bg-color;
+  background-color: var(--main-bg-color);
   transform: translateX(100%);
   transition: transform 250ms linear;
   @media screen and (min-width: 768px) {
@@ -54,10 +54,10 @@
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: $main-color;
+  color: var(--main-color);
 
   &--current {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 }
 
@@ -67,7 +67,7 @@
 
 .mobile-nav__link:hover,
 .mobile-nav__link:focus {
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 // mobail-contact
@@ -86,14 +86,14 @@
 .mobile-contact__link {
   font-size: 24px;
   line-height: 1.17;
-  color: $secondary-color;
+  color: var(--secondary-color);
 
   &--indent {
     font-weight: 500;
     font-size: 30px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: $accent-color;
+    color: var(--accent-color);
     @media screen and (min-width: 480px) {
       font-size: 34px;
     }
@@ -121,7 +121,7 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 .mobile-social__link::after {

@@ -24,13 +24,13 @@
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 }
 
 .current-link {
   position: relative;
-  color: $accent-color;
+  color: var(--accent-color);
 
   &::after {
     content: '';

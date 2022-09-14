@@ -51,7 +51,7 @@
   padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
-  color: $white-color-text;
+  color: var(--white-color-text);
 }
 
 .product-card__wrapper-content {
@@ -77,5 +77,5 @@
   font-size: 16px;
   line-height: 1.88;
 
-  color: $secondary-color;
+  color: var(--secondary-color);
 }

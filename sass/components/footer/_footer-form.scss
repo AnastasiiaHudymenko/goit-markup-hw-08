@@ -18,7 +18,7 @@
   line-height: 1.14;
   text-transform: uppercase;
 
-  color: $white-color-text;
+  color: var(--white-color-text);
 }
 
 .sign-up-form__label {
@@ -39,7 +39,7 @@
     width: 450px;
   }
 
-  color: $white-color-text;
+  color: var(--white-color-text);
   background-color: transparent;
   @media screen and (min-width: 1200px) {
     width: 358px;
@@ -67,8 +67,8 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  background-color: $accent-color;
-  color: $white-color-text;
+  background-color: var(--accent-color);
+  color: var(--white-color-text);
   cursor: pointer;
   @media screen and (max-width: 1199px) {
     margin-top: 20px;

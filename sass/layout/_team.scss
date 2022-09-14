@@ -17,7 +17,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  background-color: $main-bg-color;
+  background-color: var(--main-bg-color);
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -46,5 +46,5 @@
 
   font-size: 16px;
   line-height: 1.18;
-  color: $secondary-color;
+  color: var(--secondary-color);
 }
