@@ -1158,12 +1158,22 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
+@media screen and (max-width: 400px) {
+  .mobile-nav__link {
+    font-size: 30px;
+  }
+}
 .mobile-nav__link--current {
   color: var(--accent-color);
 }
 
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
+}
+@media screen and (max-width: 400px) {
+  .mobile-nav__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
 
 .mobile-nav__link:hover,
@@ -1182,6 +1192,11 @@ body {
 
 .mobile-contact__item:not(:last-child) {
   margin-bottom: 32px;
+}
+@media screen and (max-width: 400px) {
+  .mobile-contact__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
 
 .mobile-contact__link {

@@ -50,8 +50,12 @@
 // mobail-nav
 
 .mobile-nav__link {
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
+  }
   font-weight: 500;
   font-size: 40px;
+  
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -62,7 +66,11 @@
 }
 
 .mobile-nav__item:not(:last-child) {
+  @media screen and (max-width: 400px) {
+    margin-bottom: 25px;
+  }
   margin-bottom: 32px;
+  
 }
 
 .mobile-nav__link:hover,
@@ -80,6 +88,9 @@
 }
 
 .mobile-contact__item:not(:last-child) {
+  @media screen and (max-width: 400px) {
+    margin-bottom: 25px;
+  }
   margin-bottom: 32px;
 }
 
