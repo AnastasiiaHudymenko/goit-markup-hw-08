@@ -1182,11 +1182,11 @@ body {
 }
 
 .mobile-contact {
-  margin-top: 105px;
+  margin-top: 16.85vh;
 }
 @media screen and (min-width: 480px) {
   .mobile-contact {
-    margin-top: 302px;
+    margin-top: 48.48vh;
   }
 }
 
