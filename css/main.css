@@ -354,6 +354,69 @@ body {
   background-color: var(--main-bg-color);
 }
 
+@media screen and (min-width: 768px) {
+  .stiky-btn {
+    position: fixed;
+    z-index: 22;
+    right: 20px;
+    bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(55, 143, 245, 0.5);
+  }
+}
+
+.stiky-btn__icon {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .stiky-btn__icon {
+    display: block;
+    fill: var(--accent-color);
+    -webkit-animation: styki-pop 2s linear infinite;
+            animation: styki-pop 2s linear infinite;
+  }
+}
+
+@-webkit-keyframes styki-pop {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes styki-pop {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
