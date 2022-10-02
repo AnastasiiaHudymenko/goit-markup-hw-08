@@ -14,6 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- simplelightbox-css -->
+    <link rel="stylesheet" href="./node_modules/simplelightbox/dist/simple-lightbox.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -143,66 +145,60 @@
       <section class="projects">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="projects__list">
+          <ul class="projects__list gallery">
             <li class="projects-item">
               <div class="projects__thumb">
-                <picture>
-                  <source
-                    srcset="./images/image-1.webp 1x, ./images/project-1@2x.webp 2x"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/image-1.jpg 1x, ./images/project-1@2x.jpg 2x"
-                    type="image/jpeg"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./images/image-1.jpg"
-                    alt="людина набирає текст на клавіатурі"
-                  />
-                </picture>
+                <a href="./images/simpl-box-1.jpg">
+                  <picture>
+                    <source
+                      srcset="./images/image-1.webp 1x, ./images/project-1@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/image-1.jpg 1x, ./images/project-1@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img loading="lazy" src="./images/image-1.jpg" alt="Десктопні додатки" />
+                  </picture>
+                </a>
 
                 <p class="projects__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="projects-item">
               <div class="projects__thumb">
-                <picture>
-                  <source
-                    srcset="./images/image-2.webp 1x, ./images/project-2@2x.webp 2x"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/image-2.jpg 1x, ./images/project-2@2x.jpg 2x"
-                    type="image/jpeg"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./images/image-2.jpg"
-                    alt="людина тримає телефон перед єкраном ноутбука"
-                  />
-                </picture>
+                <a href="./images/simpl-box-2.jpg" title="jhhh">
+                  <picture>
+                    <source
+                      srcset="./images/image-2.webp 1x, ./images/project-2@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/image-2.jpg 1x, ./images/project-2@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img loading="lazy" src="./images/image-2.jpg" alt="Мобільні додатки" />
+                  </picture>
+                </a>
 
                 <p class="projects__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="projects__item">
               <div class="projects__thumb">
-                <picture>
-                  <source
-                    srcset="./images/image-3.webp 1x, ./images/project-3@2x.webp 2x"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/image-3.jpg 1x, ./images/project-3@2x.jpg 2x"
-                    type="image/jpeg"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./images/image-3.jpg"
-                    alt="людина тримає планшет в руках"
-                  />
-                </picture>
+                <a href="./images/simpl-box-3.jpg">
+                  <picture>
+                    <source
+                      srcset="./images/image-3.webp 1x, ./images/project-3@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/image-3.jpg 1x, ./images/project-3@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img loading="lazy" src="./images/image-3.jpg" alt="Дизайнерські рішення" />
+                  </picture>
+                </a>
 
                 <p class="projects__text">Дизайнерські рішення</p>
               </div>
@@ -792,15 +788,23 @@
       </div>
     </div>
 
+    <!-- Scrol-body -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <!-- Modal-form-js -->
     <script src="./js/modal.js"></script>
+    <!-- modal-mobile-js -->
     <script src="./js/mobil-menu.js"></script>
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- scroll-js -->
     <script src="./js/scroll-header.js"></script>
+    <!-- Photo-box -->
+    <script src="./node_modules/simplelightbox/dist/simple-lightbox.js"></script>
+    <script src="./js/simpl-gallary.js"></script>
   </body>
 </html>
